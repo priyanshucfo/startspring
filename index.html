@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Full Screen Image</title>
+    <style>
+        /* Reset margins and prevent scrollbars */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            background-color: #000; /* Optional: gives a clean black backdrop */
+        }
+
+        .full-screen-img {
+            width: 100vw;
+            height: 100vh;
+            
+            /* Preserves image aspect ratio while filling the view */
+            object-fit: cover; 
+            object-position: center; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Direct relative link to your local image file -->
+    <img src="img.png" class="full-screen-img" alt="Spring Initializr Screen">
+
+</body>
+</html>
